@@ -1,0 +1,34 @@
+.begin{
+    background-image: url(../public/website.jpg);
+    position:relative;
+    height:50vh;
+    width: 100%;
+    background-size: cover;
+    font-weight: bold;
+    text-align: center;
+}
+.begin_content{
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: bold;
+    padding-top: 100px;
+    color:#76b737;
+    text-align:center;
+}
+.text_center{
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.begin_emarketing{
+    background-image: url(../public/seo.jpg);
+    position:relative;
+    height:50vh;
+    width: 100%;
+    background-size: cover;
+    font-weight: bold;
+    text-align: center;
+}
