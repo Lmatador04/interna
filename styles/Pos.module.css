@@ -1,3 +1,9 @@
+
+
+
+
+
+
 .begin{
     background-image: url(../public/pos.png);
     position:relative;
@@ -8,6 +14,8 @@
     text-align: center;
     
 }
+
+
 .begin_content{
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -66,4 +74,13 @@
     position:absolute;
     vertical-align: top;
     width: 8.8125rem;
+}
+.begin_conten{
+    background-image: url(../public/img/header-bg.jpg);
+    position:relative;
+    height:50vh;
+    width: 100%;
+    background-size: cover;
+    font-weight: bold;
+    text-align: center;
 }

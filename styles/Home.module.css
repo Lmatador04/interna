@@ -6,6 +6,27 @@
   justify-content: center;
   align-items: center;
 }
+.begin{
+  background-image: url(../public/website.jpg);
+  position:relative;
+  height:50vh;
+  width: 100%;
+  background-size: cover;
+  font-weight: bold;
+  text-align: center;
+}
+
+.masthead {
+ 
+  color: white;
+  height:50vh;
+  width: 100%;
+  background-image: url(../public/header.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
 
 .main {
   padding: 5rem 0;

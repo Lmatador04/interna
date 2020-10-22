@@ -12,7 +12,7 @@ const Emarketing= ({t})=>(
         <motion.div
         initial={{y: -300}}
         animate={{y: -15}} 
-        transition={{delay:0.2, type:'spring', stiffness: 8}}>
+        >
 <h1 className={styles.begin_content} >{t('referencement')} </h1>
 </motion.div>
 </div>
@@ -52,12 +52,7 @@ const Emarketing= ({t})=>(
 <div className="row">
 
       <div className="col-md-4">
-      <motion.div 
-          whileHover={{ scale: 2.2, originX:0 }}>
-      <Card style={{ width: '8rem' }}>
-    <Card.Img   variant="top" src="website-template-3335753_1920.jpg" alt="image du digital" />
-    </Card>
-    </motion.div>
+      
     
 <h2>{t('optimisation')}</h2>
 <p>{t('nos designer')}</p>
@@ -65,22 +60,12 @@ const Emarketing= ({t})=>(
       </div>
       
       <div className="col-md-4">
-          <motion.div 
-          whileHover={{ scale: 2.2, originX:0 }}>
-      <Card style={{ width: '8rem', }}>
-    <Card.Img   variant="top" src=" social-media-5187243_640.png" alt="social média " />
-    </Card>
-    </motion.div>
+          
 <h2> {t('booster')}</h2>
 <p> {t('google est le')}  </p>
       </div>
       <div className="col-md-4">
-      <motion.div 
-          whileHover={{ scale: 2.2,originX:0 }}>
-      <Card style={{ width: '8rem' }}>
-    <Card.Img variant="top" src="social-media.jpg" alt="seo image" />
-    </Card>
-    </motion.div>
+     
     <h2> {t('solution webmarketing')}</h2>
 <p> {t('afin de repondre')}  </p>
              </div>

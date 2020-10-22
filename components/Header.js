@@ -11,8 +11,16 @@ const AppLink = ({children, className, href}) =>
 
  const Header = ({ t }) =>  (
         <>
-<Navbar bg="white"  expand="lg" >
-  <Navbar.Brand href="#home" >React-Bootstrap</Navbar.Brand>
+<Navbar bg="white"  expand="lg" fixed="top" sticky="bottom" >
+  <Navbar.Brand href="#home" >
+  <img
+        src="img/logo.png"
+        width="150"
+        height="60"
+        className="d-inline-block align-top"
+        alt="React Bootstrap logo"
+      />
+  </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="nav-item mr-auto">
