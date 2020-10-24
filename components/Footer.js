@@ -15,7 +15,7 @@ const Footer = ({ t }) => (
                 <div className="col-lg-4 col-sm-4 col-xs-4">
                     <h4> {t('Contactez nous')}</h4>
                     <ul>
-                    <li><a className="email" ><i class="fas fa-envelope-open-text"></i>Mail: afk1995wilfried@gmail.com </a> </li>
+                    <li><a className="email" ><i className="fas fa-envelope-open-text"></i>Mail: afk1995wilfried@gmail.com </a> </li>
                         <br/>
                         <li> <h6>  <i className="fas fa-phone-square-alt"></i> Tel: +237 69247072 </h6> </li>
                         <li> <h6> FAQ </h6> </li>

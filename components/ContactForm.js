@@ -25,8 +25,8 @@ function ContactForm({t}) {
 
     <div className="form-group">
     <div className="input-group mb-2 ">
- <div class="input-group-prepend">
-          <div class="input-group-text"><i class="fas fa-user"></i></div>
+ <div className="input-group-prepend">
+          <div className="input-group-text"><i className="fas fa-user"></i></div>
         </div>
       <input
       className="form-control"
@@ -49,8 +49,8 @@ function ContactForm({t}) {
 
 <div className="form-group">
     <div className="input-group mb-2 ">
- <div class="input-group-prepend">
-          <div class="input-group-text"><i class="fas fa-at"></i></div>
+ <div className="input-group-prepend">
+          <div className="input-group-text"><i className="fas fa-at"></i></div>
         </div>
         <input
       className="form-control"
@@ -69,8 +69,8 @@ function ContactForm({t}) {
       />
       <div className="form-group">
     <div className="input-group mb-2 ">
- <div class="input-group-prepend">
-          <div class="input-group-text"><i class="fas fa-comments"></i></div>
+ <div className="input-group-prepend">
+          <div className="input-group-text"><i className="fas fa-comments"></i></div>
         </div>
         <textarea className ="form-control"
         id="message"

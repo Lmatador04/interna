@@ -73,9 +73,11 @@ const AppLink = ({children, className, href}) =>
     a:hover {
       border-bottom: 3px solid #76b737;
       transition: all 0.2s ease-out;
-      text-decoration: none;
+      
       color:#76b737;
       background-color:#fff;
+      text-decoration:none;
+      font-weight: bold;
       
     }
     

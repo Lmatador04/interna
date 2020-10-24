@@ -48,9 +48,6 @@ const Homepage = ({ t }) =>{
  
   <script async data-id="64729" src="https://cdn.widgetwhats.com/script.min.js"></script>
 
-    
-   
-    <link rel="stylesheet" href="assets/css/style.css"></link>
   
   </Head>
   
