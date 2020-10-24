@@ -65,6 +65,23 @@ const SiteWeb= ({t})=>(
     </div>
     </div>
     <Footer />
+    <style jsx>
+      {
+        `soft-box{
+          background: #fff;
+          width: 120px;
+          height: 120px;
+          border-radius: 77px;
+          border: #41c365 solid 4px;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          margin: 0 auto;
+          flex-wrap: wrap;
+          transition: ease-in all 0.5s;
+        }`
+      }
+    </style>
     </>
 )
 

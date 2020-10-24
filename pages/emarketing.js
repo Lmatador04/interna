@@ -30,7 +30,7 @@ const Emarketing= ({t})=>(
             <motion.div
         initial={{y: -200}}
         animate={{y:-10 }}
-        transition={{delay: 0.2, type:'spring', stiffness: 5}} >         
+        transition={{delay: 0.1, type:'spring', stiffness: 1}} >         
 <p className="mt-3"> {t('pourquoi la recherche')} </p >
 </motion.div>
   </div>

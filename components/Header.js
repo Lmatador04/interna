@@ -18,13 +18,13 @@ const AppLink = ({children, className, href}) =>
         width="150"
         height="60"
         className="d-inline-block align-top"
-        alt="React Bootstrap logo"
+        alt="Radiance logo"
       />
   </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="nav-item mr-auto">
-      <AppLink href="/" ><a className="nav-link nav-item" >{t('accueil')}</a></AppLink>
+      <AppLink href="/" ><a className="nav-link nav-item" ><i className="fas fa-home"></i>{t('accueil')}</a></AppLink>
      
       <NavDropdown title="Services" id="collasible-nav-dropdown">
     <AppLink  href= "/gestion-des-points-de-vente"><a className="dropdown-item" >{t('pos')}</a></AppLink>
@@ -36,8 +36,8 @@ const AppLink = ({children, className, href}) =>
     </Nav>
     <Nav>
     <AppLink href="/"><a className="nav-link ">{t('A-propos-de-nous')}</a></AppLink>
-      <Nav.Link eventKey={2} href="#memes">
-        Dank memes
+      <Nav.Link eventKey={2} href="components/ContactForm">
+        Contact
       </Nav.Link>
       
       <Button variant="outline-success"
@@ -99,7 +99,9 @@ const AppLink = ({children, className, href}) =>
 </>
  )
 
-
+ Header.getInitialProps = async () => ({
+  namespacesRequired: ['header'],
+})
 Header.propTypes = {
   t: PropTypes.func.isRequired,
 }

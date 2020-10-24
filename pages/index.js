@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Head from 'next/head'
 import styles from '../styles/Pos.module.css';
+import ContactForm from '../components/ContactForm'
 
 
 import React from 'react';
@@ -46,6 +47,11 @@ const Homepage = ({ t }) =>{
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossOrigin="anonymous"></link><script type="text/javascript" src="floating-wpp.min.js"></script>
  
   <script async data-id="64729" src="https://cdn.widgetwhats.com/script.min.js"></script>
+
+    
+   
+    <link rel="stylesheet" href="assets/css/style.css"></link>
+  
   </Head>
   
     <main>
@@ -55,7 +61,8 @@ const Homepage = ({ t }) =>{
       <div>
  
 <h1 className={styles.tool_index}>
-Nos services
+{t('Nos services')}
+
 </h1>
 
       
@@ -68,25 +75,26 @@ Nos services
                <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div className="Soft-box">
                      <i><img src="img/service1.png" alt="#" /></i>
-                     <h3> Software</h3>
-                     <p>It is a long established fact that a reader will be distracted by the readable contentt has a more-or-less norf letters,</p>
-                     <p><Link href="emarketing"  ><a class="btn btn-success" role="button" >View details »</a></Link></p>
+                     <h3> E-marketing</h3>
+                     <p> {t('Avoir un site')} </p>
+                     <p><Link href="/emarketing"  ><a className="btn btn-success" role="button" >View details »</a></Link></p>
                   </div>
                </div>
                <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div className="Soft-box">
                      <i><img src="img/service2.png" alt="#" /></i>
-                     <h3>For Mobile</h3>
-                     <p>It is a long established fact that a reader will be distracted by the readable contentt has a more-or-less norf letters,</p>
-                     <p><Link href="/gestion-des-points-de-vente"><a class="btn btn-success"  role="button">View details »</a></Link></p>
+                     <h3>{t('Logiciel de caisse')}</h3>
+                     <p>{t('Logiciel')}</p>
+                     <p><Link href="/gestion-des-points-de-vente" ><a className="btn btn-success" role="button" >View details »</a></Link></p>
+
                   </div>
                </div>
                <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                   <div className="Soft-box">
                      <i><img src="img/service3.png" alt="#" /></i>
-                     <h3>For Computer</h3>
-                     <p>It is a long established fact that a reader will be distracted by the readable contentt has a more-or-less norf letters,</p>
-                     <p><Link href="/creation_site_internet_et_application"><a class="btn btn-success"  role="button">View details »</a></Link></p>
+                     <h3> {t('Site responsive')}</h3>
+                     <p>{t('Etre présent')}</p>
+                     <Link href="/creation_site_internet_et_application"><a className="btn btn-success"  role="button">View details »</a></Link>
                   </div>
                </div>
             </div>
@@ -100,7 +108,7 @@ Nos services
             <div className="row">
                <div className="col-md-12">
                   <div className="titlepage">
-                     <h2>Who <span className="white">We Are</span></h2>
+                     <h2> {t('Who')}<span className="white">{t('We Are')}</span></h2>
                   </div>
                </div>
             </div>
@@ -115,9 +123,11 @@ Nos services
                         </div>
                         <div className="col-xl-7 col-lg-7 col-md-7 col-sm-12">
                            <div className="weare-box">
-                              <h3>middle of text.</h3>
-                              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat</p>
-                              <a className="read_more bg" href="#">Read More</a>
+                              <h3>Radiance-consulting</h3>
+                              <p>{t('est une agence spécialisée') } 
+
+                              </p>
+                              
                            </div>
                         </div>
                      </div>
@@ -131,9 +141,9 @@ Nos services
                         </div>
                         <div className="col-xl-7 col-lg-7 col-md-7 col-sm-12">
                            <div className="weare-box">
-                              <h3>middle of text.</h3>
-                              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat</p>
-                              <a className="read_more bg" href="#">Read More</a>
+                              <h3></h3>
+                              <p>{t('Vous êtes un Prêt à porter')} </p>
+                             
                            </div>
                         </div>
                      </div>
@@ -156,7 +166,9 @@ Nos services
 
 
 
-
+               <div className="titlepage mt-5 mb-5 ">
+                     <h2>Frequently  <span className="white">Ask Question </span></h2>
+                  </div>
                
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary
@@ -164,13 +176,12 @@ Nos services
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography className={classes.heading}>General settings</Typography>
-          <Typography className={classes.secondaryHeading}>I am an accordion</Typography>
+          <Typography className={classes.heading}>{t('Sites web')}</Typography>
+          <Typography className={classes.secondaryHeading}>{t('Pourquoi nos sites')}</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget
-            maximus est, id dignissim quam.
+          {t('Nous utilisons les technologies')}
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -180,15 +191,14 @@ Nos services
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography className={classes.heading}>Users</Typography>
+          <Typography className={classes.heading}>{t('POS')}</Typography>
           <Typography className={classes.secondaryHeading}>
-            You are currently not an owner
+          {t('Avez vous une solution')} 
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus, varius pulvinar
-            diam eros in elit. Pellentesque convallis laoreet laoreet.
+          {t('Oui nous Installons')}  
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -198,43 +208,24 @@ Nos services
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
-          <Typography className={classes.heading}>Advanced settings</Typography>
+          <Typography className={classes.heading}>{t('POS')}</Typography>
           <Typography className={classes.secondaryHeading}>
-            Filtering has been entirely disabled for whole web server
+          {t('Avez vous un backoffice')} 
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
-            vitae egestas augue. Duis vel est augue.
+          {t('Oui notre logiciel ')}
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel4bh-content"
-          id="panel4bh-header"
-        >
-          <Typography className={classes.heading}>Personal data</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
-            vitae egestas augue. Duis vel est augue.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-    
-
-
-
-
-
-
+      
 
                </div>
         </div>
+      </div>
+      <div className="container mt-5 mb-4">
+      <ContactForm />
       </div>
 
     <Footer />
@@ -356,17 +347,16 @@ Nos services
  }
  
  .bg {
-      font-size: 17px;
+      font-size: 14px;
       background-color: transparent;
       color: #3fbc61;
       padding: 9px 0px;
       width: 100%;
       max-width: 190px;
-      float: left;
+      float: middle;
       text-align: center;
       margin-top: 20px;
       border: #3fbc61 solid 2px;
-      text-transform: uppercase;
       font-weight: 500;
  }
  
@@ -391,7 +381,7 @@ Nos services
 }
 
 Homepage.getInitialProps = async () => ({
-  namespacesRequired: ['common', 'footer'],
+  namespacesRequired: ['common', 'footer','contact'],
 })
 
 Homepage.propTypes = {
